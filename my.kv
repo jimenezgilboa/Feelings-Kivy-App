@@ -1,0 +1,36 @@
+<btn>:
+    text: "Submit"
+    on_press: root.press()
+    size_hint_y: None
+    height: 60
+    background_color: 0, 0, 0, 0  # this makes the default button background invisible
+    canvas.before:
+        Color:
+            rgba: (0, 0, 1, 1)  # change to the color you want for your button
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [30]  # change to the radius you want for your rounded corners
+
+<MainScreen>:
+
+    canvas.before:
+        Color:
+            rgba: (44/255, 228/255, 209/255, 0.18)  # change to the color you want for your background
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+
+
+
+<SecondScreen>:
+    Label:
+        text: 'Second Screen'
+
+
+
+
+
+
+
